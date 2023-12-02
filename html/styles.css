@@ -12,9 +12,55 @@ ID selector : same as class but here it needs to be unique '#' is used to select
 */
 
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/* 
+The Cascade takes top to bottom approach.
+If two same selector are taken into consideration then the selector property of the bottom one will replace the propery of the top one.
+It also works with individual selector also. 
+
+The type selector has the specificity of 0-0-1(lowest) and class selector has the specificity of 0-1-0 (medium) , then the id selector has the specificity of 1-0-0 (highest)
+Even tough css is cascade(top to bottom) but if the element is given the id and added the properties befor the element, id values will be choosen into consideration
+
+When selectors are combined they should be read from right to left. 
+The selector farthest to the right, directly before the opening curly bracket, is known as the key selector. 
+The key selector identifies exactly which element the styles will be applied to. 
+
+Layering styles with multiple classes:
+<p class = "btn btn-red">Decline </p>
+as shown above the element can have multiple classes, they have to be space seperated.
+
+Currently there are four primary ways to represent sRGB colors within CSS: keywords, hexadecimal notation, and RGB and HSL values.
+Hexadecimal color values consist of a pound, or hash, #, followed by a three- or six- character figure. 
+The figures use the numbers 0 through 9 and the letters a through f, upper or lower case. 
+These values map to the red, green, and blue color channels.
+For example, a shade of orange represented by the hexadecimal color #ff6600 could also be written as #f60.
+
+RGB color values are stated using the rgb() function, which stands for red, green, and blue. 
+The function accepts three comma-separated values, each of which is an integer from 0 to 255. 
+A value of 0 would be pure black; a value of 255 would be pure white.
+RGB color values may also include an alpha, or transparency, channel by using the rgba() function. 
+The rgba() function requires a fourth value, which must be a number between 0 and 1, including decimals. 
+A value of 0 creates a fully transparent color, meaning it would be invisible, and a value of 1 creates a fully opaque color. 
+Any decimal value in between 0 and 1 would create a semi-transparent color.
+
+HSL color values are stated using the hsl() function, which stands for hue, saturation, and lightness. 
+Within the parentheses, the function accepts three comma-separated values, much like rgb().
+The first value, the hue, is a unitless number from 0 to 360.
+The second and third values, the saturation and lightness, are percentage values from 0 to 100%. 
+HSL color values, like RGBa, may also include an alpha, or transparency, channel with the use of the hsla() function.
+
+Lengths:
+Length values come in two different forms, absolute and relative, each of which uses different units of measurement.
+Absolute length values are the simplest length values, as they are fixed to a physical measurement, such as inches, centimeters, or millimeters.
+The pixel is equal to 1/96th of an inch; thus there are 96 pixels in an inch.
+
+Relative Lengths:
+Percentage lengths are defined in relation to the length of another object. 
+For example, to set the width of an element to 50%, we have to know the width of its parent element, the element it is nested within, and then identify 50% of the parent element’s width.
+
+em:
+The em unit is also a very popular relative value. 
+The em unit is represented by the em unit notation, and its length is calculated based on an element’s font size.
+A single em unit is equivalent to an element’s font size. So, for example, if an element has a font size of 14 pixels and a width set to 5em, the width would equal 70 pixels (14 pixels multiplied by 5).
 */
 
 html,
